@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+body {
+    background-color: hsl(233, 47%, 7%);
+    color: white;
+    font-size: 15px;
+    font-family: "Inter";
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background-color: hsl(244, 38%, 16%);
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+
+    width: 540px;
+    height: 446px;
+}
+
+img {
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.imagem-container {
+    position: relative;
+    display: inline-block;
+}
+  
+.imagem-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+  
+  .imagem-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(108, 39, 157); /* Cor roxa (RGBA) */
+    mix-blend-mode: color; /* Mistura a cor com a imagem */
+    pointer-events: none; /* Permite interagir com a imagem */
+    filter: brightness(0.5)
+}
+  
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-left: 75px;
+    margin-bottom: 60px;
+    margin-top: 40px;
+}
+
+h1 {
+    margin-left: 75px;
+    margin-top: 70px;
+}
+
+#numeros {
+    display: flex;
+    justify-content: space-around;
+}
+
+.empresa {
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 25px;
+    font-weight: 300;
+}
+
+h2 {
+    margin-left: 40px;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+span {
+    color: #ab5cdb;
+}
